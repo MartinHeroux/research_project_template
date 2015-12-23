@@ -1,0 +1,25 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{myStyle}
+
+% Graphicspath used to avoid trouble with paths. 
+% Change to approriate path when starting project.
+\graphicspath{{/home/martin/Dropbox/sketchbook/python/project/project_template/notes/img/}}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\input{./tex/title.tex} 
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{./tex/winter2015.tex}
+\input{./tex/spring2015.tex}
+
+% References:
+\newpage
+\bibliographystyle{./ref/jneurophysiol}
+\bibliography{./ref/ref_list}
+ 
+\end{document}
