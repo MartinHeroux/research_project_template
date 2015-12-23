@@ -14,6 +14,7 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     :return: None
     """
     folders = (os.path.join(base, project),
+
                os.path.join(base, project, 'src'),
                os.path.join(base, project, 'src', 'code'),
                os.path.join(base, project, 'src', 'code', 'data_proc'),
@@ -35,11 +36,11 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
                os.path.join(base, project, 'doc', 'ms'),
                os.path.join(base, project, 'doc', 'slides'),
                os.path.join(base, project, 'doc', 'protocol'),
-               os.path.join(base, project, 'doc', 'results'))
+               os.path.join(base, project, 'doc', 'results'),
+               os.path.join(base, project, 'doc', 'misc'))
 
     for path in folders:
         try:
-            print(path)
             os.mkdir(path)
         except FileExistsError:
             print('\nThe folder {} already exists. Please delete the project folder '
