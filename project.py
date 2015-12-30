@@ -8,13 +8,12 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     Create project template with various sub-folders and files.
 
     :param base: Folder where main project folder will be created.
-    :type base: string (but do not need quotation makes on command line)
+    :type base: string (but do not need quotation marks on command line)
     :param project: Name of project; this will be used to generate the main folder
-    :type project: string (but do not need quotation makes on command line)
+    :type project: string (but do not need quotation marks on command line)
     :return: None
     """
     folders = (os.path.join(base, project),
-
                os.path.join(base, project, 'src'),
                os.path.join(base, project, 'src', 'code'),
                os.path.join(base, project, 'src', 'code', 'data_proc'),
@@ -47,6 +46,7 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
                   'and re-run this function if you truly want to create a blank template '
                   'project folder named "{}".\n'.format(path, project))
             sys.exit(1)  # abort
+    # Copy over folder and associated files for ms and notes LaTex documents
     shutil.copytree('./ms', os.path.join(base, project, 'src', 'ms'))
     shutil.copytree('./notes', os.path.join(base, project, 'src', 'notes'))
 
