@@ -24,7 +24,7 @@ The above command create a project template called `cool_project`; the folder wo
 **Windows**
 >    python project.py '/c/Users/Joanna/Dropbox/' temp
 
-Using Git Bash, the above command create a project template called `temp`; the folder would be located in `/c/Users/Joanna/Dropbox/`. Thanks to [Joanna Diong](https://github.com/joannadiong) for the function on a Windows machine.
+Using Git Bash, the above command create a project template called `temp`; the folder would be located in `/c/Users/Joanna/Dropbox/`. Thanks to [Joanna Diong](https://github.com/joannadiong) for  testing the function on a Windows machine.
 
 The function has been tested with Python >2.7  or Python >3.4. 
 
