@@ -6,6 +6,21 @@ At present, this project template will not be appropriate for all scientific pro
 
 My project template is aimed at scientists that use computers as part of their research, but who do not consider themselves computer scientists or computer experts. My own experience lies in the life and health sciences, where many researchers have little to no training in computer programming, and the use of Excel and other error prone and irreproducible software suites is rampant. The use of a standard template and an introduction to an alternative way of working (e.g., version control, text files, LaTeX, writing computer code) may help us, the scientists who work in these varied fields, integrate some of the important lessons that computer science and related disciplines have learned a long time ago.
 
+Usage
+--
+To run the main function and create a project template (files and folders described below), simply run:
+> $ python project.py < base > < project >
+
+< base>  = Folder where main project folder will be created; e.g., /home/martin/Documents/
+< project > = Name of project; this will be the name of the main folder; e.g., cool_project
+Note that you should not use quotation marks on the command line.
+
+> $ python project.py /home/martin/Documents/ cool_project
+
+The above command would create a project template called `cool_project`; the folder would be located in `/home/martin/Documents/`
+ 
+The function has been tested with Python >2.7  or Python >3.4. 
+
 Folder Structure
 --
 The basic structure is to keep source documents (`src`), data (`data`), and generated documents (`doc`) in separate folders. 
