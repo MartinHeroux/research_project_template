@@ -8,9 +8,9 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     Create project template with various sub-folders and files.
 
     :param base: Folder where main project folder will be created.
-    :type base: string (but do not need quotation marks on command line)
-    :param project: Name of project; this will be used to generate the main folder
-    :type project: string (but do not need quotation marks on command line)
+    :type base: string (put in quotes if file path contains spaces).
+    :param project: Name of project; this will be used to generate the main folder.
+    :type project: string (put in quotes if project name contains spaces).
     :return: None
     """
     folders = (os.path.join(base, project),

@@ -9,16 +9,23 @@ My project template is aimed at scientists that use computers as part of their r
 Usage
 --
 To run the main function and create a project template (files and folders described below), simply run:
-> $ python project.py < base > < project >
+> python project.py < base > < project >
 
 < base>  = Folder where main project folder will be created; e.g., /home/martin/Documents/
 < project > = Name of project; this will be the name of the main folder; e.g., cool_project
-Note that you should not use quotation marks on the command line.
 
-> $ python project.py /home/martin/Documents/ cool_project
+Note that you don't have to use quotation marks on the command line. But this may be necessary if you have spaces in your file path or project name.
 
-The above command would create a project template called `cool_project`; the folder would be located in `/home/martin/Documents/`
+**Linux** 
+> python project.py /home/martin/Documents/ cool_project
+
+The above command create a project template called `cool_project`; the folder would be located in `/home/martin/Documents/`
  
+**Windows**
+>    python project.py '/c/Users/Joanna/Dropbox/' temp
+
+Using Git Bash, the above command create a project template called `temp`; the folder would be located in `/c/Users/Joanna/Dropbox/`. Thanks to [Joanna Diong](https://github.com/joannadiong) for the function on a Windows machine.
+
 The function has been tested with Python >2.7  or Python >3.4. 
 
 Folder Structure
