@@ -23,7 +23,7 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
                os.path.join(base, project, 'src', 'ethics'),
                #os.path.join(base, project, 'src', 'ms'),
                os.path.join(base, project, 'src', 'slides'),
-               os.path.join(base, project, 'src', 'protocol'),
+               #os.path.join(base, project, 'src', 'protocol'),
                os.path.join(base, project, 'src', 'results'),
                os.path.join(base, project, 'data'),
                os.path.join(base, project, 'data', 'raw'),
@@ -49,6 +49,7 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     # Copy over folder and associated files for ms and notes LaTex documents
     shutil.copytree('./ms', os.path.join(base, project, 'src', 'ms'))
     shutil.copytree('./notes', os.path.join(base, project, 'src', 'notes'))
+    shutil.copytree('./protocol', os.path.join(base, project, 'src', 'protocol'))
 
 if __name__ == '__main__':
     gen()
