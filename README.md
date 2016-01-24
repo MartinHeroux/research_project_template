@@ -93,3 +93,10 @@ This style of working may seem a little foreign to some, especially if you are o
 One possibility would be to keep all versions in the `src` folder, but export a PDF of the current version of the document to the `doc` when it is at a certain stage (e.g., final_draft.pdf, submitted_version.pdf). This and other approaches are all likely to be suboptimal because they require many versions of each document to be saved. This is necessary if you want to have a history of the changes made by you or one of your collaborators. In LibreOffice and Word, once a change is accepted, the record of this change disappears (unless you use the version tool in these word processors, but few people know they exist or know how to use them properly). 
 
 At present, I write my notes and manuscripts using LaTeX. I also write computer code to process data and generate figures. However, I prepare ethics forms, testing sheets, protocol details, etc., using LibreOffice; these are kept in the `doc` folder. Eventually I would like to have template folders created in the `src` folder that contain LaTeX skeleton for these files. 
+
+Customisation
+--
+Set user-specific filepaths for `\graphicspath{}` in `.tex` files and customise LaTeX `myStyle.sty` files in the following folders:
+
+* `/src/notes/`
+* `/src/protocol/`
