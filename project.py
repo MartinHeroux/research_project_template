@@ -3,7 +3,7 @@ import os
 import shutil
 
 
-def gen(base=sys.argv[1], project=sys.argv[2]):
+def gen():
     """
     Create project template with various sub-folders and files.
 
@@ -13,6 +13,11 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     :type project: string (put in quotes if project name contains spaces).
     :return: None
     """
+    try:
+        base = sys.argv[1]
+        project = sys.argv[2]
+    except IndexError:
+        raise IndexError ('Path and name of project folder must be provided on the command line. \nexample: project.py /home/martin/Desktop cool_project')
     folders = (os.path.join(base, project),
                os.path.join(base, project, 'src'),
                os.path.join(base, project, 'src', 'code'),
@@ -52,4 +57,8 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     shutil.copytree('./protocol', os.path.join(base, project, 'src', 'protocol'))
 
 if __name__ == '__main__':
-    gen()
+    try:
+        gen()
+    except Exception as e:
+        print(e)
+        sys.exit(1)
